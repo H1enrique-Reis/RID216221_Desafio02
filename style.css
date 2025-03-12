@@ -11,11 +11,16 @@ h2 {
     font-size: 2rem;
 }
 
+h3 {
+    font-size: 1.25rem;
+}
+
 header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: #02A28F;
+    box-shadow: 0 10px 10px -5px #0000001A;
     height: 4.5rem;
 }
 
@@ -33,38 +38,86 @@ main{
 
 .column1{
     display: flex;
-    flex: 2;
+    flex-direction: column; 
 }
 
-#section-image{
+#container-image{
     display: flex;
     justify-content: end;
     align-items: flex-start;
     flex-direction: column;
 }
 
-#section-image{
+#container-image{
     margin: 50px 0 30px 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0), black), url(imagens/backgroundImg.png);
-    width: 100%;
+    box-shadow: 0 10px 20px -5px #0000001A;
+    width: 46.5rem;
     height: 24.75rem;
     background-size: cover;
     border-radius: 10px;
     color: white;
 }
 
-#section-image > h2 {
+#container-image > h2 {
     margin-left: 20px;
 }
 
-#section-image > p {
+#container-image > p {
     margin-left: 20px;
 }
 
-#section-image > p:last-child{
+#container-image > p:last-child{
     margin: 0 0 20px 20px;
 }
 
-.column2{
-    flex: 1;
+#title-posts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title-posts{
+    background-color: #02A28F;
+    box-shadow: 0 10px 10px -5px #0000001A;
+    width: auto;
+    height: 3.5rem;
+    border-radius: 8px;
+    padding: 0 1.25rem 0 1.25rem;
+    color: white;
+}
+
+#title-posts > a{
+    color: white;
+    font-size: 14px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards > img{
+    width: 360px;
+    height: 100%;
+}
+
+.cards-conteudo{
+    padding: 1.25rem;
+    width: 320px;
+}
+
+.link-azul{
+    font-size: 14px;
+    color: #02A28F;
+}
+
+.autor-data{
+    font-size: 14px;
+    color: #616161;
+}
+
+.conteudo{
+    font-size: 14px;
+    color: #000000;
 }
