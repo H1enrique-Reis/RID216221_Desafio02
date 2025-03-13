@@ -71,6 +71,10 @@ main{
     margin: 0 0 20px 20px;
 }
 
+#container-posts{
+    margin-bottom: 3.45rem
+}
+
 #title-posts{
     display: flex;
     justify-content: space-between;
@@ -85,6 +89,7 @@ main{
     border-radius: 8px;
     padding: 0 1.25rem 0 1.25rem;
     color: white;
+    margin-bottom: 20px;
 }
 
 #title-posts > a{
@@ -92,17 +97,41 @@ main{
     font-size: 14px;
 }
 
-.cards{
+#container-card-posts{
     display: flex;
-    flex-direction: column;
+    gap: 20px;
 }
 
-.cards > img{
-    width: 360px;
+.cards{
+    display: flex;
+    flex-direction: column; 
+}
+
+.cards{
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    border-radius: 16px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+#container-card2 > .cards-conteudo{
+    gap: 3px;
+}
+
+.cards:hover{
+    transform: scale(1.03); 
+}
+
+.img-cards{
+    width: 22.6rem;
     height: 100%;
+    margin: 0;
 }
 
 .cards-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     padding: 1.25rem;
     width: 320px;
 }
@@ -110,6 +139,7 @@ main{
 .link-azul{
     font-size: 14px;
     color: #02A28F;
+    text-decoration: none;
 }
 
 .autor-data{
@@ -120,4 +150,21 @@ main{
 .conteudo{
     font-size: 14px;
     color: #000000;
+}
+
+#container-card-posts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02A28F;
+    height: 48px;
+    font-size: 14px;
+    color: white;
 }
