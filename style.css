@@ -164,6 +164,10 @@ main{
     width: 100%;
 }
 
+#container-PostsPopulares{
+    margin-bottom: 30px;
+}
+
 #title-postPopular{
     display: flex;
     align-items: center;
@@ -221,6 +225,49 @@ main{
     font-size: 12px;
     color: #616161;
     font-weight: 500;
+}
+
+#title-Categorias{
+    display: flex;
+    align-items: center;
+}
+
+#title-Categorias{
+    padding-left: 1.25rem;
+    background-color: #02A28F;
+    box-shadow: 0 13px 10px 1px #0000001A;
+    width: auto;
+    height: 3rem;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#list-Categorias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#list1 , #list2{
+    list-style-type: none;
+    padding-left: 0;
+    color: #616161;
+    font-weight: 600;
+}
+
+#list1 > li{
+    padding: 7px 7px 7px 0;
+
+}
+
+#list1 > li::before{
+    content: ">";
+    margin-right: 5px;
+}
+
+#list2 > li{
+    padding: 7px;
 }
 
 footer{
