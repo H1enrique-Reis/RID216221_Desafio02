@@ -4,7 +4,7 @@
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h2 {
@@ -288,7 +288,6 @@ footer{
 @media (min-width: 601px) and (max-width: 1024px) {
     header{
         width: auto;
-        
     }
 
     header > h1{
@@ -305,6 +304,8 @@ footer{
     #container-image{
         width: 100%;
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .cards-conteudo{
@@ -319,6 +320,75 @@ footer{
     #container-Categorias{
         margin-bottom: 60px;
     }
+   
+}
 
-    
+@media (max-width: 600px){
+    p{
+        font-size: 14px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    header > h1{
+        font-size: 1.5rem;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 0 8px;
+        gap: 0;
+    }
+
+    #container-image{
+        width: 100%;
+        height: 24.75rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #container-image > p{
+        font-size: 1rem;
+    }
+
+    #container-image > h2{
+        font-size: 1.5rem;
+    }
+
+    #container-card-posts{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-cards{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .cards-conteudo{
+        width: auto;
+    }
+
+    #title-postPopular{
+        justify-content: center;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #container-Categorias{
+        margin-bottom: 40px;
+    }
+
+    #title-Categorias{
+        justify-content: center;
+        padding: 0;
+    }
+
+
 }
